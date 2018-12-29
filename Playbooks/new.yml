@@ -1,0 +1,11 @@
+--- # Test Playbook
+- hosts: localhost
+  user: test
+  connection: ssh
+  sudo: yes
+  gather_facts: no
+#  vars_files:
+#  - ./vars.yml
+  tasks:
+    - name: untar a file
+#
